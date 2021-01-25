@@ -1,0 +1,38 @@
+{
+  "name": "veage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "conf-db": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "test": "mocha --exit tests/**/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express-serve-static-core": "^4.17.14",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "faker": "^5.1.0",
+    "mocha": "^8.2.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2",
+    "sequelize-cli": "^6.2.0"
+  }
+}
